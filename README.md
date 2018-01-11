@@ -1,5 +1,5 @@
 # ClusteringDemo
-
+![](https://github.com/gaoliyao/ClusteringDemo/blob/master/Screen%20Shot%202018-01-11%20at%2012.39.34%20PM.png)
 ## Environment Setup
 Python 3.6
 
