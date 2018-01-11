@@ -1,3 +1,6 @@
+# author: choffstein
+# https://github.com/choffstein/dbscan/blob/master/dbscan/dbscan.py
+# revised by Mars
 # -*- coding: utf-8 -*-
 
 # A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise
@@ -80,3 +83,8 @@ def test_dbscan():
     eps = 0.5
     min_points = 2
     assert dbscan(m, eps, min_points) == [1, 1, 1, 2, 2, 2, None]
+
+m = np.matrix('-0.99 -0.98 -0.97 -0.96 -0.95 0.95 0.96 0.97 0.98 0.99; 1.1 1.09 1.08 1.07 1.06 1.06 1.07 1.08 1.09 1.1')
+eps = 1
+min_points = 3
+print(dbscan(m, eps, min_points))
