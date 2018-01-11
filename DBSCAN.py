@@ -16,8 +16,8 @@ from sklearn.preprocessing import StandardScaler
 
 # #############################################################################
 # Generate sample data
-# centers = [[-1, 1], [1, 1]]
-centers = [[-10, 10], [-20, 20], [-30, 30]]
+centers = [[-1.5, 1], [1.5, 1], [0, -2]]
+# centers = [[-10, 10], [-20, 20], [-30, 30]]
 X, labels_true = make_blobs(n_samples=750, centers=centers, cluster_std=0.4,
                             random_state=0)
 
