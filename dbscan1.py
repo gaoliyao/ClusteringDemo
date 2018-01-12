@@ -78,11 +78,11 @@ def dbscan(m, eps, min_points):
                 cluster_id = cluster_id + 1
     return classifications
 
-def test_dbscan():
-    m = np.matrix('1 1.2 0.8 3.7 3.9 3.6 10; 1.1 0.8 1 4 3.9 4.1 10')
-    eps = 0.5
-    min_points = 2
-    assert dbscan(m, eps, min_points) == [1, 1, 1, 2, 2, 2, None]
+# def test_dbscan():
+#     m = np.matrix('1 1.2 0.8 3.7 3.9 3.6 10; 1.1 0.8 1 4 3.9 4.1 10')
+#     eps = 0.5
+#     min_points = 2
+#     assert dbscan(m, eps, min_points) == [1, 1, 1, 2, 2, 2, None]
 
 m = np.matrix('-0.99 -0.98 -0.97 -0.96 -0.95 0.95 0.96 0.97 0.98 0.99; 1.1 1.09 1.08 1.07 1.06 1.06 1.07 1.08 1.09 1.1')
 eps = 1
